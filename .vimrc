@@ -8,3 +8,8 @@ set noexpandtab
 set exrc
 set secure
 set number
+set showcmd
+set cursorline
+set foldenable
+let:pymode_python = 'python3'
+inoremap jj <Esc> """ jj key is <Esc> setting
