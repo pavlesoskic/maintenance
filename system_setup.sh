@@ -3,14 +3,10 @@ if [ "$1" == "--proxy" ]; then
         #END PROXY SETUP
         echo "$2" "proxy setup"
         export http_proxy="$2"
-        export https_proxy="$2"
-        export ftp_proxy="$2"
     else
         #ENV PROXY SETUP
         echo "No default proxy, AMRES assumed"
         export http_proxy=http://proxy.rcub.bg.ac.rs
-        export https_proxy=http://proxy.rcub.bg.ac.rs
-        export ftp_proxy=http://proxy.rcub.bg.ac.rs
     fi
 else
     echo "Standard setup."
@@ -50,7 +46,7 @@ git clone https://github.com/scrooloose/nerdcommenter.git
 echo "Dependencies....."
 #DOWNLOAD MORE DEPENDENCIES
 sudo apt-get install build-essential terminator \
-openssh-server sshfs python3 psensor htop unity-tweak-tool \
+openssh-server sshfs python3 psensor htop gnome-tweak-tool \
 texstudio octave gimp inkscape python3-pip \
 calibre geogebra cmake
         
