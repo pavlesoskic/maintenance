@@ -13,10 +13,7 @@ else
 fi
 echo "Getting Apps"
 #APT-GET
-sudo apt-get install git
-sudo apt-get install vim
-sudo apt-get install terminator
-sudo apt-get install ssh
+sudo apt-get install git vim terminator ssh curl
 
 echo "dependencies..."
 #GOOD STUFF
